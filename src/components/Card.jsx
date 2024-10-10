@@ -7,13 +7,13 @@ const Card = ({ products }) => {
   const nav = useNavigate()
 
   return (
-    <div className='flex overflow-x-auto gap-x-10 items-center mt-10 scrollbar scrollbar-thumb-black scrollbar-track-transparent py-5 snap-x snap-mandatory'>
+    <div className='flex mx-auto overflow-x-auto gap-x-5 items-center scrollbar scrollbar-thumb-black scrollbar-track-transparent p-5 snap-x snap-mandatory'>
       {
         products.map((item, idx) => (
           <div
             key={idx}
             onClick={() => nav(`${DETAIL_PAGE.replace(':id', idx)}`)}
-            className='w-[360px] h-[180px] lg:w-[360px] lg:h-52 shrink-0 snap-start'>
+            className='w-[300px] h-[190px] sm:w-[360px] sm:h-[180px] lg:w-[360px] lg:h-52 shrink-0 snap-start cursor-pointer'>
             <div className='bg-gray-300 w-full h-2/3'>
               <img src={item.src} alt={item.title} className='w-full h-full object-cover' />
             </div>

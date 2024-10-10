@@ -10,7 +10,7 @@ import Card from "../../components/Card";
 
 const HomePage = () => {
   return (
-    <div className="px-5">
+    <div className="px-5 ">
       <HomeBanner />
       <Carousel products={bannerData} />
       <Card products={productData} />

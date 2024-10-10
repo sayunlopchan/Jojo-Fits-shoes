@@ -28,7 +28,7 @@ const Carousel = ({ products }) => {
   };
 
   return (
-    <div className="relative w-full h-[400px] flex items-center justify-center">
+    <div className="relative w-full h-[200px] lg:h-[400px] flex items-center justify-center">
 
       {/* Carousel wrapper */}
       <div className="relative w-full h-full">
@@ -39,7 +39,7 @@ const Carousel = ({ products }) => {
           >
             <img
               src={item.src}
-              className="size-full object-cover mx-auto"
+              className="size-full object-contain mx-auto"
               alt={item.alt || `Slide ${idx + 1}`}
             />
           </div>
