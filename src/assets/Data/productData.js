@@ -1,6 +1,18 @@
+import img_1 from '../images/Shoes/custom-nike-dunk-high-by-you-shoes.webp'
+import img_2 from '../images/Shoes/custom-nike-dunk-low-by-you-su24-1.webp'
+import img_3 from '../images/Shoes/custom-nike-dunk-low-by-you-su24.webp'
+import img_4 from '../images/Shoes/NIKE+COURT+VISION+LO+NN.webp'
+import img_5 from '../images/Shoes/NIKE+COURT+VISION+LO.webp'
+import img_6 from '../images/Shoes/W+NIKE+DUNK+HIGH.webp'
+
+// Banner
+import banner_1 from '../images/Carousel banner/nike-banner-1.jpg'
+import banner_2 from '../images/Carousel banner/Nike-Header-min.jpg'
+import banner_3 from '../images/Carousel banner/NIKE_DUNK_LOW_racer_blue.webp'
+
 export const productData = [
   {
-    src: "/src/assets/images/Shoes/custom-nike-dunk-high-by-you-shoes.webp",
+    src: img_1,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
     description: "Personalize your Nike Dunk High with custom colors and details.",
@@ -10,7 +22,7 @@ export const productData = [
     price: 6000
   },
   {
-    src: "/src/assets/images/Shoes/custom-nike-dunk-low-by-you-su24-1.webp",
+    src: img_2,
     alt: "Carousel Image 2",
     title: "Custom Nike Dunk Low - Summer Edition",
     description: "A fresh and vibrant summer edition of the classic Nike Dunk Low.",
@@ -20,7 +32,7 @@ export const productData = [
     price: 6000
   },
   {
-    src: "/src/assets/images/Shoes/custom-nike-dunk-low-by-you-su24.webp",
+    src: img_3,
     alt: "Carousel Image 3",
     title: "Nike Dunk Low Custom",
     description: "Design your own pair of Nike Dunk Lows for a unique look.",
@@ -30,7 +42,7 @@ export const productData = [
     price: 6000
   },
   {
-    src: "/src/assets/images/Shoes/NIKE+COURT+VISION+LO+NN.webp",
+    src: img_4,
     alt: "Carousel Image 4",
     title: "Nike Court Vision Lo NN",
     description: "Classic court-inspired Nike shoes with a modern twist.",
@@ -40,7 +52,7 @@ export const productData = [
     price: 6000
   },
   {
-    src: "/src/assets/images/Shoes/NIKE+COURT+VISION+LO.webp",
+    src: img_5,
     alt: "Carousel Image 5",
     title: "Nike Court Vision Lo",
     description: "Timeless and versatile sneakers, perfect for any occasion.",
@@ -50,7 +62,7 @@ export const productData = [
     price: 6000
   },
   {
-    src: "/src/assets/images/Shoes/W+NIKE+DUNK+HIGH.webp",
+    src: img_6,
     alt: "Carousel Image 6",
     title: "W Nike Dunk High",
     description: "A women's exclusive high-top Nike Dunk with bold colors.",
@@ -63,7 +75,7 @@ export const productData = [
 
 export const bannerData = [
   {
-    src: "/src/assets/images/Carousel banner/nike-banner-1.jpg",
+    src: banner_1,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
     description: "Personalize your Nike Dunk High with custom colors and details.",
@@ -72,7 +84,7 @@ export const bannerData = [
     color: "Blue/White",
   },
   {
-    src: "/src/assets/images/Carousel banner/Nike-Header-min.jpg",
+    src: banner_2,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
     description: "Personalize your Nike Dunk High with custom colors and details.",
@@ -81,7 +93,7 @@ export const bannerData = [
     color: "Blue/White",
   },
   {
-    src: "/src/assets/images/Carousel banner/NIKE_DUNK_LOW_racer_blue.webp",
+    src: banner_3,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
     description: "Personalize your Nike Dunk High with custom colors and details.",
