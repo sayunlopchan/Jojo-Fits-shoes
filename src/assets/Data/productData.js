@@ -1,3 +1,5 @@
+
+// SHOES
 import img_1 from '../images/Shoes/custom-nike-dunk-high-by-you-shoes.webp'
 import img_2 from '../images/Shoes/custom-nike-dunk-low-by-you-su24-1.webp'
 import img_3 from '../images/Shoes/custom-nike-dunk-low-by-you-su24.webp'
@@ -5,13 +7,14 @@ import img_4 from '../images/Shoes/NIKE+COURT+VISION+LO+NN.webp'
 import img_5 from '../images/Shoes/NIKE+COURT+VISION+LO.webp'
 import img_6 from '../images/Shoes/W+NIKE+DUNK+HIGH.webp'
 
-// Banner
+// BANNER
 import banner_1 from '../images/Carousel banner/nike-banner-1.jpg'
 import banner_2 from '../images/Carousel banner/Nike-Header-min.jpg'
 import banner_3 from '../images/Carousel banner/NIKE_DUNK_LOW_racer_blue.webp'
 
-export const productData = [
+const shoes = [
   {
+    id: 1,
     src: img_1,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
@@ -22,6 +25,7 @@ export const productData = [
     price: 6000
   },
   {
+    id: 2,
     src: img_2,
     alt: "Carousel Image 2",
     title: "Custom Nike Dunk Low - Summer Edition",
@@ -32,6 +36,7 @@ export const productData = [
     price: 6000
   },
   {
+    id: 3,
     src: img_3,
     alt: "Carousel Image 3",
     title: "Nike Dunk Low Custom",
@@ -42,6 +47,7 @@ export const productData = [
     price: 6000
   },
   {
+    id: 4,
     src: img_4,
     alt: "Carousel Image 4",
     title: "Nike Court Vision Lo NN",
@@ -52,6 +58,7 @@ export const productData = [
     price: 6000
   },
   {
+    id: 5,
     src: img_5,
     alt: "Carousel Image 5",
     title: "Nike Court Vision Lo",
@@ -62,6 +69,7 @@ export const productData = [
     price: 6000
   },
   {
+    id: 6,
     src: img_6,
     alt: "Carousel Image 6",
     title: "W Nike Dunk High",
@@ -73,8 +81,9 @@ export const productData = [
   },
 ];
 
-export const bannerData = [
+const bannerData = [
   {
+    id: 1,
     src: banner_1,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
@@ -84,6 +93,7 @@ export const bannerData = [
     color: "Blue/White",
   },
   {
+    id: 2,
     src: banner_2,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
@@ -93,6 +103,7 @@ export const bannerData = [
     color: "Blue/White",
   },
   {
+    id: 3,
     src: banner_3,
     alt: "Carousel Image 1",
     title: "Custom Nike Dunk High",
@@ -102,3 +113,10 @@ export const bannerData = [
     color: "Blue/White",
   },
 ]
+
+const productData = {
+  shoes,
+  bannerData,
+}
+
+export default productData;
