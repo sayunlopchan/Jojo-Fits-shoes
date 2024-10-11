@@ -10,3 +10,5 @@ export const SALE = '/women';
 
 // PAGE ROUTES
 export const DETAIL_PAGE = '/jojofits-detail/:id';
+export const CART_PAGE = '/jojofits-carts';
+export const FAVOURITE_PAGE = '/jojofits-favourite';

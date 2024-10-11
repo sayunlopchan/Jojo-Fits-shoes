@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const Carousel = ({ products }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [isTransitioning, setIsTransitioning] = React.useState(false);
+
+  // Timer for auto-sliding every 5 seconds
+  useEffect(() => {
+    const autoSlide = setInterval(() => {
+      handleNext();
+    }, 5000); // 5 seconds
+
+    return () => {
+      clearInterval(autoSlide); // Clear the interval on unmount or re-render
+    };
+  }, [currentIndex]); // Re-run effect when currentIndex changes
 
   const handleNext = () => {
     if (!isTransitioning) {
@@ -35,11 +46,11 @@ const Carousel = ({ products }) => {
         {products.map((item, idx) => (
           <div
             key={idx}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${idx === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute inset-0 transition-opacity duration-300 ease-in-out ${idx === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <img
               src={item.src}
-              className="size-full object-contain mx-auto"
+              className="size-full object-cover mx-auto"
               alt={item.alt || `Slide ${idx + 1}`}
             />
           </div>
